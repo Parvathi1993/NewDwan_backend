@@ -3,9 +3,10 @@ namespace LoginAPI.Models
     public class User
     {
         public int Id { get; set; }
-        // public string Username { get; set; } = string.Empty;
+        public string Username { get; set; } = string.Empty;
         // public string Password { get; set; } = string.Empty;
         public string Role { get; set; }
+        public string Token { get; set; }
         public DateTime CreatedAt { get; set; }
     }
 
@@ -27,5 +28,8 @@ namespace LoginAPI.Models
         public bool Success { get; set; }
         public string Message { get; set; } = string.Empty;
         public User? User { get; set; }
+
+        public string Token { get; set; }
+
     }
 }
